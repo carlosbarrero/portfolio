@@ -1,16 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles.css">
-    <title>Luis Carlos Barrero</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/logo32x32.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e25c9e9fc4.js"
+    crossorigin="anonymous"></script>
+  <link href="//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Portfolio</title>
 </head>
+
 <body>
-    <h1>Welcome to my website</h1>
-    <h2>It could be better though</h2>
-    
+  <!-- Header -->
+  <header class="header wrapper">
+    <!-- Navigation -->
+    <nav id="navigation-bar" class="navigation-bar">
+      <!-- Personal brand logo -->
+      <a class="personal-logo" href="#">
+        <img src="./assets/logo.png" alt="Luis brand logo">
+      </a>
+
+      <button id='menu-btn' class="menu-btn">
+        <i class="fas fa-2x fa-bars"></i>
+      </button>
+
+      <ul id='nav-links' class="nav-links box-shadow-primary">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Personal info section -->
+    <section class="presentation-info">
+      <div class="presentation-content">
+        <!-- Greet -->
+        <div class="greeting-text">
+          <h1><strong>Luis Carlos Barrero</strong></h1>
+          <p>I am a Front End Developer with industry experience building &
+            optimizing websites.</p>
+        </div>
+
+        <!-- Image -->
+        <img class="personal-image box-shadow-secondary"
+          src="./assets/luis-profile-image.png"
+          alt="Luis portfolio presentation image">
+      </div>
+
+      <!-- Social media links -->
+      <div class="social-networks">
+        <!-- Social media networks -->
+        <ul>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-2x fa-linkedin">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-2x fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-2x fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Email -->
+        <a class="contact-email"
+          href="mailto:barrero.luiscarlos@gmail.com">barrero.luiscarlos@gmail.com</a>
+      </div>
+    </section>
+  </header>
+
+  <!-- Main -->
+  <main class="main wrapper">
+    <!-- What I do -->
+    <section id="services" class="what-i-do main-section">
+      <h2 class="section-heading">
+        What I do?
+      </h2>
+
+      <div class="items-container">
+        <!-- UX & IX -->
+        <article class="what-i-do-item">
+          <i class="fas fa-desktop"></i>
+          <h3>UX & UI Design</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptates consectetur eos repudiandae explicabo ab ea! Fugit
+            dignissimos nulla recusandae et quae unde deserunt, sequi dolores
+            quaerat aut, amet officiis ipsa?</p>
+        </article>
+
+        <!-- Website -->
+        <article class="what-i-do-item">
+          <i class="far fa-file-code"></i>
+          <h3>Website</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptates consectetur eos repudiandae explicabo ab ea! Fugit
+            dignissimos nulla recusandae et quae unde deserunt, sequi dolores
+            quaerat aut, amet officiis ipsa?</p>
+        </article>
+
+        <!-- Mobile Application -->
+        <article class="what-i-do-item">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Mobile Application</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptates consectetur eos repudiandae explicabo ab ea! Fugit
+            dignissimos nulla recusandae et quae unde deserunt, sequi dolores
+            quaerat aut, amet officiis ipsa?</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="main-section skills">
+      <h2 class="section-heading">Skills</h2>
+
+      <div class="skills-items-container">
+        <!-- HTML -->
+        <div class="skill-item">
+          <span aria-hidden="true" class="devicons devicons devicons-html5"
+            title="HTML5"></span>
+          <h4 class="skill-name">HTML 5</h4>
+        </div>
+
+        <!-- CSS3 -->
+        <div class="skill-item">
+          <span aria-hidden="true" class="devicons devicons-css3"
+            title="CSS"></span>
+          <h4 class="skill-name">CSS3</h4>
+        </div>
+
+        <!-- Javascript -->
+        <div class="skill-item">
+          <span aria-hidden="true" class="devicons devicons-javascript_badge"
+            title="JavaScript &amp; ES6">
+          </span>
+          <h4 class="skill-name">Javascript</h4>
+        </div>
+
+        <!-- SASS -->
+        <div class="skill-item">
+          <span aria-hidden="true" class="devicons devicons-sass"
+            title="SASS"></span>
+          <h4 class="skill-name">SASS</h4>
+        </div>
+
+        <!-- REST APIS -->
+        <div class="skill-item">
+          <span aria-hidden="true"
+            class="material-icons">settings_ethernet</span>
+          <h4 class="skill-name">REST APIS</h4>
+        </div>
+
+        <!-- React -->
+        <div class="skill-item">
+          <i title="React" class="fab fa-react"></i>
+          <h4 class="skill-name">React</h4>
+        </div>
+
+        <!-- JQuery -->
+        <div class="skill-item">
+          <span aria-hidden="true" class="devicons devicons-jquery"
+            title="jQuery"></span>
+          <h4 class="skill-name">JQuery</h4>
+        </div>
+
+        <!-- Firebase -->
+        <div class="skill-item">
+          <span aria-hidden="true" class="devicons devicons-firebase"
+            title="Firebase"></span>
+          <h4 class="skill-name">Firebase</h4>
+        </div>
+
+        <!-- Wordpress -->
+        <div class="skill-item">
+          <i title="Wordpress" class="fab fa-wordpress"></i>
+          <h4 class="skill-name">Wordpress</h4>
+        </div>
+
+        <!-- GIT -->
+        <div class="skill-item">
+          <span aria-hidden="true" class="devicons devicons-git"
+            title="Git"></span>
+          <h4 class="skill-name">GIT</h4>
+        </div>
+
+        <!-- Responsive -->
+        <div class="skill-item">
+          <span aria-hidden="true" class="devicons devicons-responsive"
+            title="Responsive Design"></span>
+          <h4 class="skill-name">Responsive Design</h4>
+        </div>
+
+        <!--Accesibility -->
+        <div class="skill-item">
+          <span aria-hidden="true" class="fas fa-universal-access"
+            title="Accessibility"></span>
+          <h4 class="skill-name">Accessibility</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="main-section projects">
+      <h2 class="section-heading">Projects</h2>
+
+      <div class="projects-items-container">
+        <article data-aos="fade-right" class="project-item">
+          <div class="project-item-image box-shadow-primary">
+            <img
+              src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib"
+              alt="Project">
+          </div>
+
+          <div class="project-item-data">
+            <h2 class="project-title">Lorem Ipsum</h2>
+
+            <p class="project-description">Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Aliquid, qui suscipit. Quaerat
+              blanditiis illo saepe cum obcaecati possimus cumque, at numquam
+              laboriosam. Atque libero error voluptate esse, quia placeat
+              excepturi.</p>
+
+            <h3 class="project-sub-title">Technologies:</h3>
+
+            <ul class="project-technologies">
+              <li>Javascript</li>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>SASS</li>
+            </ul>
+
+            <ul class="project-links">
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                    class="fas fa-globe"></i> View</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <article data-aos="fade-left" class="project-item">
+          <div class="project-item-image box-shadow-primary">
+            <img
+              src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib"
+              alt="Project">
+          </div>
+
+          <div class="project-item-data">
+            <h2 class="project-title">Lorem Ipsum</h2>
+
+            <p class="project-description">Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Aliquid, qui suscipit. Quaerat
+              blanditiis illo saepe cum obcaecati possimus cumque, at numquam
+              laboriosam. Atque libero error voluptate esse, quia placeat
+              excepturi.</p>
+
+            <h3 class="project-sub-title">Technologies:</h3>
+
+            <ul class="project-technologies">
+              <li>Javascript</li>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>SASS</li>
+            </ul>
+
+            <ul class="project-links">
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                    class="fas fa-globe"></i> View</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+          </div>
+        </article>
+        <article data-aos="fade-right" class="project-item">
+          <div class="project-item-image box-shadow-primary">
+            <img
+              src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib"
+              alt="Project">
+          </div>
+
+          <div class="project-item-data">
+            <h2 class="project-title">Lorem Ipsum</h2>
+
+            <p class="project-description">Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Aliquid, qui suscipit. Quaerat
+              blanditiis illo saepe cum obcaecati possimus cumque, at numquam
+              laboriosam. Atque libero error voluptate esse, quia placeat
+              excepturi.</p>
+
+            <h3 class="project-sub-title">Technologies:</h3>
+
+            <ul class="project-technologies">
+              <li>Javascript</li>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>SASS</li>
+            </ul>
+
+            <ul class="project-links">
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                    class="fas fa-globe"></i> View</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <article data-aos="fade-left" class="project-item">
+          <div class="project-item-image box-shadow-primary">
+            <img
+              src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib"
+              alt="Project">
+          </div>
+
+          <div class="project-item-data">
+            <h2 class="project-title">Lorem Ipsum</h2>
+
+            <p class="project-description">Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Aliquid, qui suscipit. Quaerat
+              blanditiis illo saepe cum obcaecati possimus cumque, at numquam
+              laboriosam. Atque libero error voluptate esse, quia placeat
+              excepturi.</p>
+
+            <h3 class="project-sub-title">Technologies:</h3>
+
+            <ul class="project-technologies">
+              <li>Javascript</li>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>SASS</li>
+            </ul>
+
+            <ul class="project-links">
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                    class="fas fa-globe"></i> View</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+          </div>
+        </article>
+        <article data-aos="fade-right" class="project-item">
+          <div class="project-item-image box-shadow-primary">
+            <img
+              src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib"
+              alt="Project">
+          </div>
+
+          <div class="project-item-data">
+            <h2 class="project-title">Lorem Ipsum</h2>
+
+            <p class="project-description">Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Aliquid, qui suscipit. Quaerat
+              blanditiis illo saepe cum obcaecati possimus cumque, at numquam
+              laboriosam. Atque libero error voluptate esse, quia placeat
+              excepturi.</p>
+
+            <h3 class="project-sub-title">Technologies:</h3>
+
+            <ul class="project-technologies">
+              <li>Javascript</li>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>SASS</li>
+            </ul>
+
+            <ul class="project-links">
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                    class="fas fa-globe"></i> View</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+          </div>
+        </article>
+
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <section id="contact" class="contact wrapper">
+      <!-- Contact data -->
+      <div class="contact-data">
+        <h2 class="section-heading">Other interests.</h2>
+        <p class="message">Digital Marketing
+          <br>Formula 1, Cryptocurrencies, <br>Video Games and Travelling.
+        </p>
+
+        <!-- Social media links -->
+        <div class="social-networks">
+          <!-- Social media networks -->
+          <div>
+            <h3>Let's connect!</h3>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/luis-carlos-barrero/"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-2x fa-linkedin">
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/carlosbarrero" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fab fa-2x fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/LuisBarreroC" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fab fa-2x fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Email -->
+          <div>
+            <h3>Mail me</h3>
+            <a class="contact-email" href="mailto:barrero.luiscarlos@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Contact form -->
+      <form class="contact-form box-shadow-secondary">
+        <fieldset>
+          <label for="name">
+            <input required type="text" name="name" placeholder="Your name"
+              id="name-input">
+          </label>
+
+          <label for="email">
+            <input required type="text" name="email" placeholder="Your email address"
+              id="email-input">
+          </label>
+
+
+          <label for="message">
+            <textarea name="name" placeholder="Message" id="message"></textarea>
+          </label>
+
+          <button class="submit-btn" type="submit">Get in touch</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="copyright">
+      <p class="copyright-text">
+        Designed by Luis C. Barrero, Copyright &copy; 2021
+      </p>
+    </section>
+  </footer>
+  
+  <script src="./js/script.js">
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      easing: 'ease-out-back',
+      duration: 1000
+    });
+  </script>
 </body>
+
 </html>
